@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Box draft</title>
+        <style>
+            body
+            {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .box1{
+                position:static;
+            }
+            .box2
+            {
+                position: relative;
+                top: 20px;
+                left: 100px;
+            }
+            .box3
+            {
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+            .box4
+            {
+                position: fixed;
+                left:300px;
+                top: 10px;
+            }
+            .inline
+            {
+                background: lemonchiffon;
+            }
+            div
+            {
+                display: inline;
+                border: 1 px dashed darkgreen;
+                width: 50px;
+            }
+            .inline-block
+            {
+                background: mistyrose;
+            }
+            div
+            {
+                display:inline-block;
+                border: 1 px dashed firebrick;
+                width: 50px;
+            }
+            .container
+            {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 20px;
+
+            }
+            .main-content
+            {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 2;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <section class=" main-content"> 
+        <div class="box box1">flex==50
+            position:static
+        </div>
+
+        <div class="box box2">
+            position:relative
+        </div>
+
+        <div class="box box3">
+            position:absolute
+        </div>
+
+        <div class="box box4">
+            position:fixed
+        </div>
+    </section>
+
+        <section class="inline">
+            <header> Inline</header>
+            <div> Hello World Exploring Headers 1</div>
+            <div> Hello World Exploring Headers 2</div>
+            <div> Hello World Exploring Headers 3</div>
+        </section>
+
+        <section class="inline_block">
+            <header> Inline Block</header>
+            <div> Hello World Exploring Headers 1</div>
+            <div> Hello World Exploring Headers 2</div>
+            <div> Hello World Exploring Headers 3</div>
+        </section>
+
+        <section class="block">
+            <header> Block</header>
+            <div> Hello World Exploring Headers 1</div>
+            <div> Hello World Exploring Headers 2</div>
+            <div> Hello World Exploring Headers 3</div>
+        </section>
+
+        <div class="container">
+            
+        </div>
+
+
+
+
+    </body>
+</html>

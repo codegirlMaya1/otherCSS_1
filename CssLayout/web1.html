@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> webpage</title>
+        <style>
+            .section1
+            {
+                background: white;
+                color: black;
+                padding: 20px;
+            }
+            .section2
+            {
+                background: white;
+                color: black;
+                padding: 20px;
+            }
+
+            .section3
+            {
+                background: white;
+                color: black;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+            }
+
+
+            footer
+            {
+                background-color: black;
+                padding: 10 px 20px;
+                color: white;
+            }
+            .div1{
+                background-color: red;
+                display: inline;
+            }
+            .div2{
+                background-color: red;
+                display: inline-block;
+                width: 100px;
+                height: 20px;
+            }
+            .div3{
+                background-color: red;
+                width: 100px;
+                margin: auto;
+               
+            }
+            ul
+            {
+                margin:0;
+                padding: 0;
+                list-style-type: none;
+
+            }
+            li{
+                display: inline-block;
+                margin-right: 20px ;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+       <header> 
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Location</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <h1> HEADER</h1>
+        
+       </header>
+       <section class="section1">
+        <div class="div1"> This is a section dedicated to inline (only)</div>
+        <div class="div1">This is a section that continues to grow based upon the amount of content that is stored in this section.</div>
+        <div class="div1">If I would like this section to be smaller than I simply wont put as much content here. Again this is how inline (only) works</div>
+       </section>
+
+       <section> lower-section</section>
+       <section class="section2">
+        <div class="div2">Hi this section represents inline block. It is still the same size</div>
+        <div class="div2"> Hi inblock line two also the same size because it is inline-block</div>
+        <div class="div2"> inline-block is shown here</div>
+       </section>
+
+       <section class="section3">
+        <div class="div3">Css for my parent section3 shows display flex</div>
+        <div class="div3">Css for my parent also shows flex direction too</div>
+        <div class="div3">Because CSS is set for my parent I only had to set my margin as auto to work on this device....</div>
+       </section>
+
+
+
+       <footer>footer</footer>
+        
+    </body>
+</html>
